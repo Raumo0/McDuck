@@ -6,6 +6,9 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.IOException;
+import java.text.ParseException;
+
 public class MainTest {
 
     @Before
@@ -17,7 +20,7 @@ public class MainTest {
     }
 
     @Test
-    public void getMessage() {
+    public void getMessage() throws IOException, ParseException {
         Assert.assertEquals(Main.getMessage(), "Hello from trading-api!");
     }
 }
